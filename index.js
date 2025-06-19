@@ -3,7 +3,7 @@
   const app = express()
 
   const studentRoutes = require("./routes/studentRoutes")
-  const studentModels = require("./models/students")
+  // const studentModels = require("./models/students")
 
   app.use(express.json())
   app.use("/students", studentRoutes)

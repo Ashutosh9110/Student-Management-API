@@ -2,7 +2,7 @@
 
 const express = require("express")
 const router = express.Router()
-const studentController = require("../controller/studentController")
+const studentController = require("../controller/studentControllerSEQ")
 
 
 router.post("/", studentController.addStudent)
