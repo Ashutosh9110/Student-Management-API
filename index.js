@@ -8,7 +8,7 @@
   app.use(express.json())
   app.use("/students", studentRoutes)
 
-  db.sync({force:true}).then(() => {
+  db.sync().then(() => {
     app.listen(3000, () => {
       console.log("Server running at PORT 3000");
     })
