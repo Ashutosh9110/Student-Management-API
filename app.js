@@ -5,6 +5,8 @@
   const studentRoutes = require("./routes/studentRoutes")
   // const studentModels = require("./models/students")
 
+  require("./models")
+
   app.use(express.json())
   app.use("/students", studentRoutes)
 
