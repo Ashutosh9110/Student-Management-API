@@ -4,8 +4,8 @@ const sequelize = require("../utils/db-connection")
 
 const department =  sequelize.define("department", {
   id:{
-    type: DataTypes.INTEGER,
     primaryKey:true,
+    type: DataTypes.INTEGER,
     autoIncrement:true,
   },
   name: { 

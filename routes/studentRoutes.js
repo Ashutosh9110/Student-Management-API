@@ -5,11 +5,12 @@ const router = express.Router()
 const studentController = require("../controller/studentControllerSEQ")
 
 
-router.post("/", studentController.addStudent)
+router.post("/add", studentController.addStudent)
 // router.get("/", studentController.getAllStudents)
 // router.get("/:id", studentController.getStudentById)
-router.put("/:id", studentController.updateStudents)
-router.delete("/:id", studentController.deleteStudents)
+router.put("/update/:id", studentController.updateStudents)
+router.delete("/delete/:id", studentController.deleteStudents)
+router.post("/addingStudentWithCard", studentController.addingValuesToStudentAndIdentityTable)
 
 
 
